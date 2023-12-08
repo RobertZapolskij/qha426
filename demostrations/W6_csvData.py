@@ -23,6 +23,6 @@ def retrieve_data():
 #print(retrieve_data())
 def graph():
     x,y = retrieve_data()
-    plt.plot(x,y, "gx")
+    plt.plot(x,y, "b^--")
     plt.show()
 graph()
