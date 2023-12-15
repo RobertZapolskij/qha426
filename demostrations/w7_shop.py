@@ -1,7 +1,15 @@
+import json
+
+
 def shop():
-    items = {"wine": 9.99, "cheese": 2.99, "bacon": 1.99, "bread": 1.99, "croissant": 0.99}
+    with open("shop.json") as f:
+        items = json.load(f)
     return items
 
+def save_json(dictio={}):
+    with open("shop.json", "w") as f:
+        json.dump(dictio, f)
+print(shop())
 def view_all(products={}):
     for x, y in products.items():
         print(f"{x}----------£{y}")
@@ -46,7 +54,7 @@ def run():
             b2 = basket()
             b.extend(b2)
 
-run()
+
 
 
 
