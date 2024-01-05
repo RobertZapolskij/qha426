@@ -38,7 +38,7 @@ def run():
                 plt.xlabel("The king of the house")
                 plt.ylabel("Freguency")
             elif opt2 == 2:
-                plt.bar(data.keys(), data.values(), color = "#a512b1")1
+                plt.bar(data.keys(), data.values(), color = "#a512b1")
 
                 plt.ylabel("The king of the house")
                 plt.ylabel("Frequency")
